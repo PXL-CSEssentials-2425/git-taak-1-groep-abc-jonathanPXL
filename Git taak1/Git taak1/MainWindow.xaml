@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Background="LightGray">
-        
+
     <Grid>
         <TextBlock Text="Kleurenpsychologie" 
                    FontSize="24" 
@@ -24,24 +24,35 @@
                Source="Groen.png" 
                Margin="421,250,296,113"
                MouseEnter="Green_MouseEnter" 
-               MouseLeave="Image_MouseLeave"/>
+               MouseLeave="Image_MouseLeave"
+               MouseDown="Green_MouseDown"/>
 
         <Image Name="Red"
                Source="Rood.png" 
                Margin="283,250,439,113"
                MouseEnter="Red_MouseEnter"
-               MouseLeave="Image_MouseLeave"/>
+               MouseLeave="Image_MouseLeave"
+               MouseDown="Red_MouseDown"/>
 
         <Image Name="Yellow" 
                Source="Geel.png"
                Margin="421,150,296,217"
                MouseEnter="Yellow_MouseEnter"
-               MouseLeave="Image_MouseLeave"/>
+               MouseLeave="Image_MouseLeave"
+               MouseDown="Yellow_MouseDown"/>
 
         <Image Name="Blue" 
                Source="Blauw.png"
                Margin="283,150,439,217"
                MouseEnter="Blue_MouseEnter"
-               MouseLeave="Image_MouseLeave"/>
+               MouseLeave="Image_MouseLeave"
+               MouseDown="Blue_MouseDown"/>
+
+        <TextBlock Name="ColorCodeText" 
+                   FontSize="16" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" 
+                   Margin="0,349,0,0" 
+                   Text="Klik op een kleur om de code te zien."/>
     </Grid>
 </Window>

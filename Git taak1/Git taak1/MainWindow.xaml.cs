@@ -46,8 +46,27 @@ namespace Git_taak1
 
         private void Image_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            // Reset the background to the original color when the mouse leaves the image
+            
             this.Background = new SolidColorBrush(Colors.LightGray);
+        }
+        private void Green_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ColorCodeText.Text = "Kleurcode: #008000"; 
+        }
+
+        private void Red_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ColorCodeText.Text = "Kleurcode: #FF0000"; 
+        }
+
+        private void Yellow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ColorCodeText.Text = "Kleurcode: #FFFF00"; 
+        }
+
+        private void Blue_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ColorCodeText.Text = "Kleurcode: #0000FF"; 
         }
     }
 }
