@@ -24,5 +24,30 @@ namespace Git_taak1
         {
             InitializeComponent();
         }
+        private void Green_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Green);
+        }
+
+        private void Red_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Red);
+        }
+
+        private void Yellow_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Yellow);
+        }
+
+        private void Blue_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            this.Background = new SolidColorBrush(Colors.Blue);
+        }
+
+        private void Image_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            // Reset the background to the original color when the mouse leaves the image
+            this.Background = new SolidColorBrush(Colors.LightGray);
+        }
     }
 }
