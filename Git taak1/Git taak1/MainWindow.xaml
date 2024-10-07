@@ -54,5 +54,11 @@
                    VerticalAlignment="Top" 
                    Margin="0,349,0,0" 
                    Text="Klik op een kleur om de code te zien."/>
+        <TextBlock Name="ColorInfoText" 
+                   FontSize="16" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom" 
+                   Margin="270,0,0,37" 
+                   Text="Klik op een kleur voor meer informatie."/>
     </Grid>
 </Window>
